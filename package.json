@@ -1,0 +1,52 @@
+{
+	"name": "pi-message-history",
+	"version": "0.1.0",
+	"description": "Persistent, cross-project prompt history for pi: recall sent prompts and unsent drafts with up-arrow or /history.",
+	"type": "module",
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"pi",
+		"history",
+		"drafts",
+		"prompt-history"
+	],
+	"license": "MIT",
+	"author": "bnn1",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bnn1/pi-message-history.git"
+	},
+	"homepage": "https://github.com/bnn1/pi-message-history#readme",
+	"bugs": {
+		"url": "https://github.com/bnn1/pi-message-history/issues"
+	},
+	"files": [
+		"index.ts",
+		"store.ts",
+		"README.md",
+		"LICENSE"
+	],
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"engines": {
+		"node": ">=22.19.0"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*"
+	},
+	"devDependencies": {
+		"@earendil-works/pi-coding-agent": "1.3.0",
+		"@earendil-works/pi-tui": "1.3.0",
+		"@types/node": "^22.20.5",
+		"typescript": "^6.0.3"
+	},
+	"scripts": {
+		"test": "node --test test/",
+		"check": "tsc --noEmit"
+	}
+}
