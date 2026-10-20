@@ -46,7 +46,7 @@
 		"typescript": "^6.0.3"
 	},
 	"scripts": {
-		"test": "node --test test/",
+		"test": "node --test test/store.test.ts test/extension.test.ts",
 		"check": "tsc --noEmit"
 	}
 }
